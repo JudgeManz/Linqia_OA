@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "4405b0d4-7a36-4874-a6ed-f123ed93eb0d",
+		"name": "Linqia_OA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Vocabulary",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/vocab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vocab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vocabulary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vocab\": [\r\n        \"ambassador\"\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/vocab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vocab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prediction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"post_text\": \"#ad Love sadsad cool toys at #ToysRUs. Go check them out\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/prediction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"prediction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
