@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4405b0d4-7a36-4874-a6ed-f123ed93eb0d",
+		"_postman_id": "90bfb5f6-78e2-43e4-abfc-0cae504fc590",
 		"name": "Linqia_OA",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -74,7 +74,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"post_text\": \"#ad Love sadsad cool toys at #ToysRUs. Go check them out\"\r\n}"
+					"raw": "{\r\n    \"post_text\": \"#ad Love these cool toys at #ToysRUs. Go check them out\"\r\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8000/api/prediction",
